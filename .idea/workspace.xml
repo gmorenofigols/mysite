@@ -46,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/bookshop/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -73,6 +73,9 @@
       <find>index</find>
       <find>next</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -107,6 +110,7 @@
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -187,7 +191,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Bookworm-master/Bookworm-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -251,16 +255,15 @@
       <workItem from="1552637848608" duration="3317000" />
       <workItem from="1552644803028" duration="3766000" />
       <workItem from="1552752104010" duration="4397000" />
-      <workItem from="1552843795367" duration="7542000" />
+      <workItem from="1552843795367" duration="7917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54630000" />
+    <option name="totallyTimeSpent" value="55005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.20839694" />
       <window_info id="Structure" order="1" sideWeight="0.502439" side_tool="true" weight="0.20347957" />
@@ -511,7 +514,7 @@
     <entry file="file://$PROJECT_DIR$/bookshop/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
