@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}List of Elements{% endblock %}
+
+{% block content %}
+    <script>
+        function goBack(){
+            window.history.back()
+        }
+    </script>
+    <button onclick="goBack()">Back</button>
+
+    {% if books %}
+        <h1>List of Books</h1>
+        {% for b in books %}
+            <a class="text" href="/books/{{ b.id }}/"><h3>{{ b }}</h3></a>
+        {% endfor %}
+    {% endif %}
+
+    {% if authors %}
+        <h1>List of Authors</h1>
+        {% for b in authors %}
+            <a class="text" href="/authors/{{ b.id }}/"><h3>{{ b }}</h3></a>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

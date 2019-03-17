@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Book Details{% endblock %}
+
+{% block content %}
+    <h1>Book Details</h1>
+
+    <script>
+        function goBack(){
+            window.history.back()
+        }
+    </script>
+
+    <button onclick="goBack()">Back</button>
+    {% for b in book %}
+        <h3><p>{{ b.name }}</p></h3>
+        <p><b>Author: </b>{{ b.author }}</p>
+        <p><b>Cost: </b>{{ b.cost }} $</p>
+        <p><b>Editorial: </b>{{ b.editorial }}</p>
+        <p><b>Genre: </b>{{ b.genre }}</p>
+        <p><b>Release Date: </b>{{ b.release_date }}</p>
+        <p><b>Synopsis: </b>{{ b.resume }}</p>
+    {% endfor %}
+{% endblock %}
