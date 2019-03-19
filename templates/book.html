@@ -11,10 +11,13 @@
         }
     </script>
 
+    <form action="{% url 'home' %}">
+        <button>Home</button>
+    </form>
     <button onclick="goBack()">Back</button>
     {% for b in book %}
         <h3><p>{{ b.name }}</p></h3>
-        <p><b>Author: </b>{{ b.author }}</p>
+        <p><b>Author: </b>{{ b.author.name }}, born in {{ b.author.year_born }}</p>
         <p><b>Cost: </b>{{ b.cost }} $</p>
         <p><b>Editorial: </b>{{ b.editorial }}</p>
         <p><b>Genre: </b>{{ b.genre }}</p>

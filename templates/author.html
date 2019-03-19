@@ -10,6 +10,10 @@
         }
     </script>
 
+    <form action="{% url 'home' %}">
+        <button>Home</button>
+    </form>
+
     <button onclick="goBack()">Back</button>
     {% for a in author %}
         <p><b>Name: </b>{{ a.name }}</p>

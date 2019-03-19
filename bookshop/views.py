@@ -8,6 +8,15 @@ def home(request):
     return render(request, 'home_user.html')
 
 
+def search(request):
+    all_books = m.Book.objects.all()
+    all_authors = m.Author.objects.all()
+    q = request.GET.get('q')
+    books = all_books.filter(name__contains=q)
+    authors = all_authors.filter(name__contains=q)
+    return render(request, 'list_all.html', {'books': books})
+
+
 def books(request):
     all_books = m.Book.objects.all()
     return render(request, 'list_all.html', {'books': all_books})

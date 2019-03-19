@@ -4,15 +4,23 @@
 
 {% block content %}
 
+    <h1>Bookshop Home</h1>
+
+    <form id="searchform" action="{% url 'search' %}" method="get" accept-charset="utf-8">
+      <button class="searchbutton" type="submit">
+        Submit
+      </button>
+      <input class="searchfield" id="searchbox" name="q" type="text" placeholder="Books or Authors">
+    </form>
+
     {% if user.is_authenticated %}
-        Hi {{ user.username }}!
+        <p>Hi {{ user.username }}!</p>
         <p><a href="{% url 'logout' %}">logout</a></p>
         <h1>What to do:</h1>
         <a class="text" href="{% url 'books' %}"><h3>List of books</h3></a>
         <a class="text" href="{% url 'authors' %}"><h3>List of authors</h3></a>
     {% else %}
-        <p>You are not logged in</p>
-        <a href="{% url 'login' %}">login</a>
+        <p><a href="{% url 'login' %}">login</a></p>
     {% endif %}
 
 {% endblock %}
