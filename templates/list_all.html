@@ -8,12 +8,17 @@
             window.history.back()
         }
     </script>
+
+    <form action="{% url 'home' %}">
+        <button class="button" >Home</button>
+    </form>
+
     <button onclick="goBack()">Back</button>
 
     {% if books %}
         <h1>List of Books</h1>
         {% for b in books %}
-            <a class="text" href="/books/{{ b.id }}/"><h3>{{ b }}</h3></a>
+            <a class="text" href="/books/{{ b.id }}/"><h3>{{ b.name }} - {{ b.author.name }}</h3></a>
         {% endfor %}
     {% endif %}
 
