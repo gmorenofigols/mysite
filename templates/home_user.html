@@ -20,7 +20,7 @@
         <a class="text" href="{% url 'books' %}"><h3>List of books</h3></a>
         <a class="text" href="{% url 'authors' %}"><h3>List of authors</h3></a>
     {% else %}
-        <p><a href="{% url 'login' %}">login</a></p>
+        <p><a href="{% url 'login' %}">login</a> <a href="{% url 'signup' %}">sign up</a> </p>
     {% endif %}
 
 {% endblock %}
